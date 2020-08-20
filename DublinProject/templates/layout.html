@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Flask Application</title>
+    <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="data:/favicon.ico" />
+    <script src="/static/scripts/modernizr-2.6.2.js"></script>
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h3><a href="/" id="HeaderText"> B&T </a></h3>
+            </div>
+            <div class="navbar-collapse collapse">
+                
+                <ul class="nav navbar-nav">
+                  
+                    <li><a href="{{ url_for('home') }}"> Home </a></li>
+                    <li><a href="{{ url_for('things') }}"> Things To Do </a></li>
+                    <li><a href="{{ url_for('restaurants') }}"> Food & Drinks </a></li>
+                    <li><a href="{{ url_for('kinnitty') }}"> Kinnitty Castle </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        {% block content %}{% endblock %}
+        <footer>
+            <p> &nbsp; &nbsp; &nbsp; &copy;2019 - B&T Wedding Website</p>
+        </footer>
+    </div>
+
+    <script src="/static/scripts/jquery-1.10.2.js"></script>
+    <script src="/static/scripts/bootstrap.js"></script>
+    <script src="/static/scripts/respond.js"></script>
+    <script src="/static/scripts/JavaScript.js"></script>
+    <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcxwc_tlnVPcaq2hBUmrULB-eROhsbcMc&callback=initMap"></script>-->
+
+    {% block scripts %}{% endblock %}
+
+</body>
+</html>

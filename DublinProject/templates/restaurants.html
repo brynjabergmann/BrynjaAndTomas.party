@@ -1,0 +1,79 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+
+
+<div class="container">
+    <div>
+        <h3 class="title">Food and drinks in Dublin </h3>
+    </div>
+
+    <div class="column col-sm-8 villages">
+        <p id="text">
+            Here we have listed some of our favourite restaurants (&#127860;), cafés (&#9749;), pubs (&#127867;) and cocktail bars (&#127864;).
+            Click on the table below to get a list of places for a selected neighbourhood/village.
+            By clicking on the name of a restaurant/café/bar, you will be directed to its website.
+            We recommend that people book tables for restaurants in advance, especially on weekends.
+        </p>
+        <div class="panel-group">
+            <div class="panel panel-default">
+                {% for key in rows|sort %}
+                <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-target="#collapse{{key.replace(" ", "").replace(".", "").replace("/", "")}}">
+                    <div class="row panel-title row_hover">
+                        <table class="table responsive villageTitle">
+                            <thead>
+                                <tr>
+                                    <td>
+                                        <h4><b>{{key}}</b></h4>
+                                    </td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div id="collapse{{key.replace(" ", "").replace(".", "").replace("/", "")}}" class="panel-collapse collapse">
+                    <div class="panel-body row row_info">
+                        <table class="table responsive">
+                            <tbody>
+                                {% for val in rows[key] %}
+                                <tr>
+                                    <td scope="col"><b><a href="{{val['website']}}" target="_blank" class="thingsName">{{val['name']}}</b></td>
+                               
+                                    {% if val['emoji'] == 'pub' %}
+                                    <td scope="col"> &#127867;</td>
+                                    {% endif %}
+
+                                    {% if val['emoji'] == 'restaurant' %}
+                                    <td scope="col"> &#127860;</td>
+                                    {% endif %}
+
+                                    {% if val['emoji'] == 'café' %}
+                                    <td scope="col"> &#9749;</td>
+                                    {% endif %}
+
+                                    {% if val['emoji'] == 'drink' %}
+                                    <td scope="col"> &#127864;</td>
+                                    {% endif %}
+
+                                    <td scope="col">{{val['short_description']}}</td>
+                                    <td scope="col">{{val['details']}}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="column col-sm-4 mapPlaces sticky">
+        <img class="img-responsive" id="mapVillages" src="/static/images/villages.png" />
+    </div>
+
+</div>
+
+
+    {% endblock %}
+

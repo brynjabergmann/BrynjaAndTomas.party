@@ -1,0 +1,443 @@
+body {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: red;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Navbar*/
+div.navbar.navbar-inverse.navbar-fixed-top {
+    background-color: rgba(0,0,0,0.7);
+    border: 0px;
+}
+
+/*Websites name*/
+#HeaderText {
+    font-family: Georgia;
+    font-weight: bold;
+    color: whitesmoke;
+    padding-right: 15px;
+    padding-left: 10px;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+    text-decoration: none !important
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+/*Navbar items*/
+.navbar-collapse > ul > li > a {
+    color: white !important;
+    font-size: larger;
+    font-size: larger;
+    font-weight: 400;
+}
+
+/*Navbar items hovered*/
+.navbar-collapse > ul > li > a:hover {
+    color: lightgreen !important;
+}
+
+/*Three lines button*/
+.navbar-collapse collapse {
+    border-color: none;
+}
+
+
+
+
+
+/*Home page*/
+/* container fot text*/
+#homeText {
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.boldText {
+    font-size: 16px;
+}
+
+#usTwo > img {
+    min-width: 225px;
+    padding-bottom: 10px;
+}
+
+
+/*Countdown Timer*/
+#countdownTimer {
+    padding-left: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*The size of the map*/
+#map {
+    height: 90%;
+    width: 100%;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+body > div.container.body-content > div > div.column.col-sm-4 {
+    padding-left: 5px;
+}
+
+/*The titles for each site*/
+.title {
+    padding-top: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#firstPageTitle {
+    margin-bottom: 20px;
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.list {
+    padding-left: 20px;
+}
+
+.details {
+    margin-bottom: 5px;
+}
+
+
+
+/* Restaurant site*/
+#text {
+    padding-bottom: 10px;
+}
+
+.collapsed {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.villages {
+    padding-left: 0px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.villages > div > div > div:nth-child(1),
+.villages > div > div > div:nth-child(3),
+.villages > div > div > div:nth-child(5),
+.villages > div > div > div:nth-child(7),
+.villages > div > div > div:nth-child(9),
+.villages > div > div > div:nth-child(11) {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+#collapseACityCenter > div {
+    padding-top: 0px;
+}
+
+.villageTitle {
+    background-color: #b8a9c9;
+}
+
+.villages > div > div > div:nth-child(1) > div > table > tbody > tr > td {
+    border-top: 0px;
+}
+
+#collapseACityCenter > div,
+#collapseBHarcourtStreet > div,
+#collapseCPortobelloCamdenStreet > div,
+#collapseDBaggotStreet > div,
+#collapseERanelagh > div,
+#collapseFRathmines > div,
+body > div.container.body-content > div > div.column.col-sm-8.villages > div > div > div:nth-child(1),
+body > div.container.body-content > div > div.column.col-sm-8.villages > div > div > div:nth-child(3),
+body > div.container.body-content > div > div.column.col-sm-8.villages > div > div > div:nth-child(5),
+body > div.container.body-content > div > div.column.col-sm-8.villages > div > div > div:nth-child(7),
+body > div.container.body-content > div > div.column.col-sm-8.villages > div > div > div:nth-child(9),
+body > div.container.body-content > div > div.column.col-sm-8.villages > div > div > div:nth-child(11) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 1px;
+}
+
+body > div.container.body-content > div > div.column.col-sm-4 {
+    padding-right: 0;
+}
+
+
+
+
+
+/* Things to do site*/
+#text {
+    margin-right: 10px;
+}
+
+#tableHeader > tr > th:nth-child(1),
+#tableHeader > tr > th:nth-child(2),
+#tableHeader > tr > th:nth-child(3) {
+    padding-bottom: 2px;
+    padding-top:0;
+}
+
+.villages > table > tbody > tr:nth-child(even) {
+    background-color:aliceblue;
+}
+
+.villages > table > tbody > tr:nth-child(odd) {
+    background-color: #ccffcc;
+}
+
+/*The size of the map*/
+#mapPlaces {
+    margin-left: 5px;
+    margin-top: 5px;
+    min-width: 380px;
+}
+
+.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 110px;
+}
+
+ .thingsTable {
+     font-size: smaller;
+ }
+
+.thingsTableBig {
+    font-size: smaller;
+    width: 150px;
+}
+
+.thingsName {
+    color: black;
+}
+
+
+
+
+
+/* Kinnitty Castle site */
+body > div.container.body-content > div > p {
+    margin-bottom: 5px;
+}
+
+#accordion1 > div.panel.panel-default,
+#accordion2 > div.panel.panel-default,
+#accordion3 > div.panel.panel-default,
+#accordion4 > div.panel.panel-default {
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+}
+
+.first {
+    width: 40px;
+    margin: 0;
+    border-bottom-width: 0px;
+}
+
+.second {
+    width: 100px;
+    margin: 0;
+    border: 0;
+}
+
+third {
+    width: 200px;
+    margin: 0;
+    border: 0;
+}
+
+.fourth {
+    width: 200px;
+    margin: 0;
+    border: 0;
+}
+
+.table {
+    margin: 0;
+}
+
+.first.tableheader,
+.second.tableheader,
+.third.tableheader,
+.fourth.tableheader {
+    border-bottom-width: 0px;
+    padding-bottom: 2px;
+}
+
+#headingOne,
+#headingTwo,
+#headingThree,
+#headingFour {
+    padding-bottom: 0;
+    border-bottom-width: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+td.column.col-sm-1.first,
+td.column.col-sm-2.second,
+td.column.col-sm-5.third,
+td.column.col-sm-4.fourth {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    }
+
+.row_hover:hover {
+    cursor: pointer;
+}
+
+.row_info {
+    padding-bottom:0;
+}
+
+.greenText {
+    font-size: larger;
+    color: black;
+    -webkit-text-fill-color: lightgreen; 
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 2px 1px 2px black, 0 0 5px black;
+}
+
+.redText {
+    font-size: larger;
+    color: black;
+    -webkit-text-fill-color: #FF6347;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 2px 1px 2px black, 0 0 5px black;
+}
+
+.yellowText {
+    font-size: larger;
+    color: black;
+    -webkit-text-fill-color: #FFFF66;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 2px 1px 2px black, 0 0 5px black;
+}
+
+#rowHeader {
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+
+
+.plus > i {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.rooms {
+    margin-bottom: 4px;
+}
+
+#headingOne {
+    font-weight: bold;
+    background-color: lightgreen;
+}
+
+#headingTwo {
+    font-weight: bold;
+    background-color: #FF6347;
+}
+
+#headingThree {
+    font-weight: bold;
+    background-color: #FFFF66;
+}
+
+#headingFour {
+    font-weight: bold;
+    background-color: #FFFF66;
+}
+
+
+/*Row for the info and images of Kinnitty Castle*/
+#row {
+    margin-top: 15px;
+}
+
+#link {
+    color: midnightblue;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#location {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+@media (max-width: 771px) {
+    /*Navbar*/
+    div .navbar.navbar-inverse.navbar-fixed-top {
+        background-color: rgba(0,0,0,0.8);
+        border: 0px;
+    }
+}

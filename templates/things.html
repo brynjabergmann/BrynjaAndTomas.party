@@ -1,0 +1,60 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div>
+        <h3 class="title">Things to do in Dublin </h3>
+    </div>
+
+
+    <div class="column col-sm-6 villages">
+        <p id="text">
+            Dublin is the capital of Ireland, with a population of just over a million. The River Liffey splits Dublin
+            into two areas, the Northside and the Southside. Irish (Gaelic) is spoken as a first language in some
+            small areas in Ireland, but as a second language by a larger group. That is why most signs are bilingual - in both 
+            English and Irish. Irish people are in general very friendly and polite - so much that they thank the bus driver when 
+            they get off the bus! Dublin has everything; history, culture, music, shops, good food and of course, beer!
+            In the table below we have listed a few places and activities that we recommend for people staying in Dublin.
+            By clicking on the names, you get the place's location on google maps.
+        </p>
+        
+        <table class="table responsive">
+            <thead id="tableHeader">
+                <tr>
+                    <th>Nr.</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                {% for row in rows %}
+                <tr>
+                    <td class="thingsTable">{{row['generated_id']}}</td>
+                    <td class="thingsTableBig"><b><a href="{{row['website']}}" target="_blank" class="thingsName">{{row['place_name']}}</a></b></td>
+                    <td class="thingsTable">{{row['description']}}</td>
+                </tr>
+                {% endfor %}
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="column col-sm-6 villages sticky">
+        <img class="img-responsive" id="mapPlaces" src="/static/images/places.jpg" />
+    </div>
+
+</div>
+
+
+
+
+
+   
+
+
+
+
+    {% endblock %}
